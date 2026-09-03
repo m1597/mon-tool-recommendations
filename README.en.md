@@ -2,6 +2,10 @@
 
 [简体中文](README.md) | [English](README.en.md)
 
+[Download the illustrated PDF](output/pdf/MON-Tool-Recommendations.pdf)
+
+> Images are captured from each product's official website or official GitHub page to illustrate its interface and purpose.
+
 A curated list of software I use regularly and recommend. The tools are organized into only four broad categories. Each entry includes an introduction, key features, advantages, and an official link; open-source projects also include their GitHub repository.
 
 > Download software only from official websites or project repositories. Use proxy, tunneling, download, and streaming tools in accordance with local laws, service terms, and content licenses.
@@ -17,6 +21,8 @@ A curated list of software I use regularly and recommend. The tools are organize
 
 ### OBS Studio
 
+![OBS Studio interface](assets/software/obs-studio.png)
+
 OBS Studio is a free, open-source, cross-platform application for screen recording and live streaming, suitable for game streams, tutorials, presentations, and multi-camera production.
 
 - **Features:** Scene and source composition, window/screen/game capture, webcam and audio mixing, live streaming, local recording, filters, transitions, and plugins.
@@ -26,6 +32,8 @@ OBS Studio is a free, open-source, cross-platform application for screen recordi
 
 ### Bandicam
 
+![Bandicam interface](assets/software/bandicam.png)
+
 Bandicam is a commercial screen recorder focused on Windows desktop and game capture, ideal for users who want polished recordings with minimal setup.
 
 - **Features:** Region, game, webcam, and external-device recording; microphone mixing; on-screen drawing; mouse effects; scheduled recording; and screenshots.
@@ -33,6 +41,8 @@ Bandicam is a commercial screen recorder focused on Windows desktop and game cap
 - **Website:** [bandicam.com](https://www.bandicam.com/)
 
 ### Typora
+
+![Typora interface](assets/software/typora.png)
 
 Typora is a Markdown editor built around a focused, single-pane live-preview experience instead of separate source and preview panes.
 
@@ -42,6 +52,8 @@ Typora is a Markdown editor built around a focused, single-pane live-preview exp
 
 ### Foxit PDF Reader
 
+![Foxit PDF Reader interface](assets/software/foxit-pdf-reader.png)
+
 Foxit PDF Reader is a cross-platform PDF reader and annotation tool for everyday reading, review, form filling, and document signing.
 
 - **Features:** PDF viewing and printing, highlights and comments, form filling, handwritten or digital signatures, sharing, and selected AI tools.
@@ -49,6 +61,8 @@ Foxit PDF Reader is a cross-platform PDF reader and annotation tool for everyday
 - **Website:** [foxit.com/pdf-reader](https://www.foxit.com/pdf-reader/)
 
 ### Arctime
+
+![Arctime interface](assets/software/arctime.png)
 
 Arctime is a cross-platform subtitle-production application for video creators, covering transcription, timing, styling, and subtitle rendering.
 
@@ -60,6 +74,8 @@ Arctime is a cross-platform subtitle-production application for video creators, 
 
 ### Geek Uninstaller
 
+![Geek Uninstaller interface](assets/software/geek-uninstaller.png)
+
 Geek Uninstaller is a lightweight Windows utility for removing desktop programs, Microsoft Store apps, and leftover files or entries.
 
 - **Features:** Standard uninstall, leftover scanning, forced removal, registry/install-folder access, and software-list export.
@@ -67,6 +83,8 @@ Geek Uninstaller is a lightweight Windows utility for removing desktop programs,
 - **Website:** [geekuninstaller.com](https://geekuninstaller.com/)
 
 ### DeskBox
+
+![DeskBox interface](assets/software/deskbox.png)
 
 DeskBox is a free, open-source Windows desktop organizer that uses native-feeling widgets to manage real folders and everyday information.
 
@@ -77,6 +95,8 @@ DeskBox is a free, open-source Windows desktop organizer that uses native-feelin
 
 ### Escrcpy
 
+![Escrcpy interface](assets/software/escrcpy.png)
+
 Escrcpy is a graphical Android device manager built on scrcpy, making it easier to display and control phones from a computer.
 
 - **Features:** USB/wireless ADB, low-latency mirroring and control, recording, screenshots, multi-device management, file/APK operations, mapping, and automation.
@@ -86,6 +106,8 @@ Escrcpy is a graphical Android device manager built on scrcpy, making it easier 
 
 ### Everything
 
+![Everything interface](assets/software/everything.png)
+
 Everything is a local filename search utility for Windows that builds a fast index to locate files and folders almost instantly.
 
 - **Features:** Real-time filename search, filtering and sorting, advanced query syntax, regular expressions, bookmarks, and result export.
@@ -93,6 +115,8 @@ Everything is a local filename search utility for Windows that builds a fast ind
 - **Website:** [voidtools.com](https://www.voidtools.com/)
 
 ### PowerToys
+
+![PowerToys interface](assets/software/powertoys.png)
 
 Microsoft PowerToys is an open-source suite of Windows enhancements maintained by Microsoft.
 
@@ -103,6 +127,8 @@ Microsoft PowerToys is an open-source suite of Windows enhancements maintained b
 
 ### WizTree
 
+![WizTree interface](assets/software/wiztree.png)
+
 WizTree is a Windows disk-space analyzer designed to quickly identify the files and folders using the most storage.
 
 - **Features:** Folder tree and treemap views, size and count sorting, file-type statistics, filtering, result export, and cleanup assistance.
@@ -111,6 +137,8 @@ WizTree is a Windows disk-space analyzer designed to quickly identify the files 
 
 ### Huorong Internet Security
 
+![Huorong Internet Security interface](assets/software/huorong.png)
+
 Huorong is a Windows endpoint-security application combining malware protection, network defenses, and useful system-management tools.
 
 - **Features:** Malware scanning, real-time protection, firewall, vulnerability fixes, startup management, junk cleanup, and pop-up blocking.
@@ -118,6 +146,8 @@ Huorong is a Windows endpoint-security application combining malware protection,
 - **Website:** [huorong.cn](https://www.huorong.cn/)
 
 ### DeepSeek Harness
+
+![DeepSeek Harness interface](assets/software/deepseek-harness.png)
 
 DeepSeek Harness is DeepSeek's local-first, extensible, open-source coding agent and agent runtime, currently in developer preview.
 
@@ -130,6 +160,8 @@ DeepSeek Harness is DeepSeek's local-first, extensible, open-source coding agent
 
 ### Clash Verge Rev
 
+![Clash Verge Rev interface](assets/software/clash-verge-rev.png)
+
 Clash Verge Rev is an open-source, cross-platform proxy client based on Mihomo and Tauri, continuing the original Clash Verge project.
 
 - **Features:** Subscription/profile management, system proxy, TUN mode, visual node/rule editing, merge and script enhancements, and WebDAV backup.
@@ -139,6 +171,8 @@ Clash Verge Rev is an open-source, cross-platform proxy client based on Mihomo a
 
 ### Neat Download Manager
 
+![Neat Download Manager interface](assets/software/neat-download-manager.png)
+
 Neat Download Manager is a free download manager for Windows and macOS emphasizing lightweight design, segmented downloads, and browser integration.
 
 - **Features:** HTTP/HTTPS/FTP, dynamic segmentation, pause/resume, categories, bandwidth limits, proxies, browser extensions, and HLS merging.
@@ -146,6 +180,8 @@ Neat Download Manager is a free download manager for Windows and macOS emphasizi
 - **Website:** [neatdownloadmanager.com](https://neatdownloadmanager.com/)
 
 ### Internet Download Manager
+
+![Internet Download Manager interface](assets/software/internet-download-manager.png)
 
 Internet Download Manager (IDM) is a mature commercial Windows download manager known for browser integration and reliable segmented downloading.
 
@@ -155,6 +191,8 @@ Internet Download Manager (IDM) is a mature commercial Windows download manager 
 
 ### qBittorrent
 
+![qBittorrent interface](assets/software/qbittorrent.png)
+
 qBittorrent is a free, open-source, ad-free BitTorrent client with a complete and consistent cross-platform experience.
 
 - **Features:** Torrent and magnet downloads, DHT/PEX/LSD, RSS automation, bandwidth scheduling, priorities, search, torrent creation, and Web UI.
@@ -163,6 +201,8 @@ qBittorrent is a free, open-source, ad-free BitTorrent client with a complete an
 - **GitHub:** [qbittorrent/qBittorrent](https://github.com/qbittorrent/qBittorrent)
 
 ### SakuraFrp Launcher
+
+![SakuraFrp Launcher interface](assets/software/sakurafrp.png)
 
 SakuraFrp Launcher is the client for the SakuraFrp tunneling service, exposing internal game servers, websites, or remote desktops through public relays.
 
@@ -175,6 +215,8 @@ SakuraFrp Launcher is the client for the SakuraFrp tunneling service, exposing i
 
 ### foobar2000
 
+![foobar2000 interface](assets/software/foobar2000.png)
+
 foobar2000 is an audio player known for local-library management and deep customization, especially useful for large personal music collections.
 
 - **Features:** Mainstream audio formats, gapless playback, ReplayGain, tag editing, CD ripping, conversion, internet radio, DSP, and components.
@@ -182,6 +224,8 @@ foobar2000 is an audio player known for local-library management and deep custom
 - **Website:** [foobar2000.org](https://www.foobar2000.org/)
 
 ### Honeyview
+
+![Honeyview interface](assets/software/honeyview.png)
 
 Honeyview is a lightweight image viewer from Bandisoft, particularly good at browsing images, animations, and comics inside archives.
 
@@ -191,6 +235,8 @@ Honeyview is a lightweight image viewer from Bandisoft, particularly good at bro
 
 ### PotPlayer (64-bit)
 
+![PotPlayer (64-bit) interface](assets/software/potplayer.png)
+
 PotPlayer is a Windows media player with broad format compatibility and highly detailed playback controls.
 
 - **Features:** Local/network media, built-in codecs, hardware acceleration, subtitle synchronization, playlists, processing, capture, and 360° video.
@@ -198,6 +244,8 @@ PotPlayer is a Windows media player with broad format compatibility and highly d
 - **Website:** [potplayer.daum.net](https://potplayer.daum.net/)
 
 ### Spotify
+
+![Spotify interface](assets/software/spotify.png)
 
 Spotify is a cross-platform streaming service for music, podcasts, and audiobooks in supported markets.
 
@@ -207,6 +255,8 @@ Spotify is a cross-platform streaming service for music, podcasts, and audiobook
 
 ### Kazumi
 
+![Kazumi interface](assets/software/kazumi.png)
+
 Kazumi is an open-source anime discovery and streaming application driven by user-supplied collection rules.
 
 - **Features:** Search and schedules, rule sharing, multiple sources, danmaku, watchlists, history, speed control, downloads, DLNA, and Anime4K.
@@ -215,6 +265,8 @@ Kazumi is an open-source anime discovery and streaming application driven by use
 - **GitHub:** [Predidit/Kazumi](https://github.com/Predidit/Kazumi)
 
 ### Lossless Scaling
+
+![Lossless Scaling interface](assets/software/lossless-scaling.png)
 
 Lossless Scaling is a Windows scaling and frame-generation utility distributed through Steam for games and windowed applications.
 

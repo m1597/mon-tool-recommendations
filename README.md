@@ -2,6 +2,10 @@
 
 [简体中文](README.md) | [English](README.en.md)
 
+[下载图文 PDF](output/pdf/MON-Tool-Recommendations.pdf)
+
+> 配图截取自对应软件的官方网站或官方 GitHub 页面，仅用于展示软件界面与产品特点。
+
 这里整理了我日常使用并愿意推荐的软件工具。清单只分为四个大类，每款工具都附有介绍、主要功能、优点和官方入口；开源项目还会列出 GitHub 仓库。
 
 > 请从官方网站或项目仓库下载软件。网络代理、内网穿透、下载和流媒体工具应在当地法律、服务条款与内容授权允许的范围内使用。
@@ -17,6 +21,8 @@
 
 ### OBS Studio
 
+![OBS Studio interface](assets/software/obs-studio.png)
+
 OBS Studio 是一款免费、开源、跨平台的录屏与直播软件，适合游戏直播、课程录制、会议演示和多机位内容制作。
 
 - **功能：** 场景与来源组合、窗口/屏幕/游戏采集、摄像头与音频混流、直播、本地录制、滤镜、转场和插件扩展。
@@ -26,6 +32,8 @@ OBS Studio 是一款免费、开源、跨平台的录屏与直播软件，适合
 
 ### Bandicam
 
+![Bandicam interface](assets/software/bandicam.png)
+
 Bandicam 是偏重 Windows 游戏和桌面录制的商业录屏工具，适合希望快速得到高质量成片的用户。
 
 - **功能：** 屏幕区域、游戏、摄像头和外接设备录制，麦克风混音、实时绘制、鼠标效果、定时录制和截图。
@@ -33,6 +41,8 @@ Bandicam 是偏重 Windows 游戏和桌面录制的商业录屏工具，适合�
 - **官网：** [bandicam.com](https://www.bandicam.com/)
 
 ### Typora
+
+![Typora interface](assets/software/typora.png)
 
 Typora 是一款专注写作体验的 Markdown 编辑器，用单窗口实时渲染代替传统的“源码 + 预览”双栏界面。
 
@@ -42,6 +52,8 @@ Typora 是一款专注写作体验的 Markdown 编辑器，用单窗口实时渲
 
 ### 福昕 PDF 阅读器（Foxit PDF Reader）
 
+![福昕 PDF 阅读器（Foxit PDF Reader） interface](assets/software/foxit-pdf-reader.png)
+
 福昕 PDF 阅读器是一款跨平台 PDF 阅读与批注工具，适合日常阅读、审阅、填写表单和签署文档。
 
 - **功能：** 阅读与打印、文本批注、表单填写、手写或数字签名、文件分享，以及部分 AI 摘要、翻译和问答能力。
@@ -49,6 +61,8 @@ Typora 是一款专注写作体验的 Markdown 编辑器，用单窗口实时渲
 - **官网：** [foxit.com/pdf-reader](https://www.foxit.com/pdf-reader/)
 
 ### Arctime
+
+![Arctime interface](assets/software/arctime.png)
 
 Arctime 是面向视频创作者的跨平台字幕制作软件，重点解决听写、打轴、样式设计和字幕压制。
 
@@ -60,6 +74,8 @@ Arctime 是面向视频创作者的跨平台字幕制作软件，重点解决听
 
 ### Geek Uninstaller
 
+![Geek Uninstaller interface](assets/software/geek-uninstaller.png)
+
 Geek Uninstaller 是一款轻量的 Windows 软件卸载工具，主要用于移除普通程序、商店应用和残留项目。
 
 - **功能：** 常规卸载、残留扫描、强制删除损坏的卸载项、注册表/安装目录定位和软件列表导出。
@@ -67,6 +83,8 @@ Geek Uninstaller 是一款轻量的 Windows 软件卸载工具，主要用于移
 - **官网：** [geekuninstaller.com](https://geekuninstaller.com/)
 
 ### DeskBox
+
+![DeskBox interface](assets/software/deskbox.png)
 
 DeskBox 是一款免费、开源的 Windows 桌面整理工具，用原生风格小组件管理真实文件夹和常用信息。
 
@@ -77,6 +95,8 @@ DeskBox 是一款免费、开源的 Windows 桌面整理工具，用原生风格
 
 ### Escrcpy
 
+![Escrcpy interface](assets/software/escrcpy.png)
+
 Escrcpy 是基于 scrcpy 的图形化 Android 设备管理工具，让用户通过电脑显示并控制手机。
 
 - **功能：** USB 或无线 ADB 连接、低延迟投屏与控制、录屏和截图、多设备管理、文件/APK 操作、按键映射和自动化。
@@ -86,6 +106,8 @@ Escrcpy 是基于 scrcpy 的图形化 Android 设备管理工具，让用户通�
 
 ### Everything
 
+![Everything interface](assets/software/everything.png)
+
 Everything 是 Windows 本地文件名搜索工具，通过快速建立索引实现近乎即时的文件和文件夹查找。
 
 - **功能：** 文件名实时搜索、过滤与排序、高级搜索语法、正则表达式、书签和结果导出。
@@ -93,6 +115,8 @@ Everything 是 Windows 本地文件名搜索工具，通过快速建立索引实
 - **官网：** [voidtools.com](https://www.voidtools.com/)
 
 ### PowerToys
+
+![PowerToys interface](assets/software/powertoys.png)
 
 Microsoft PowerToys 是微软维护的开源 Windows 增强工具合集，为系统补充大量效率功能。
 
@@ -103,6 +127,8 @@ Microsoft PowerToys 是微软维护的开源 Windows 增强工具合集，为系
 
 ### WizTree
 
+![WizTree interface](assets/software/wiztree.png)
+
 WizTree 是 Windows 磁盘空间分析器，可以快速找出占用空间最大的文件和目录。
 
 - **功能：** 目录树和矩形树图、大小/数量排序、文件类型统计、搜索过滤、结果导出和清理辅助。
@@ -111,6 +137,8 @@ WizTree 是 Windows 磁盘空间分析器，可以快速找出占用空间最大
 
 ### 火绒安全软件
 
+![火绒安全软件 interface](assets/software/huorong.png)
+
 火绒安全软件是一款面向 Windows 的终端安全工具，提供恶意程序防护、网络防护和实用系统工具。
 
 - **功能：** 病毒与木马查杀、实时防护、网络防火墙、漏洞修复、启动项管理、垃圾清理和弹窗拦截。
@@ -118,6 +146,8 @@ WizTree 是 Windows 磁盘空间分析器，可以快速找出占用空间最大
 - **官网：** [huorong.cn](https://www.huorong.cn/)
 
 ### DeepSeek Harness
+
+![DeepSeek Harness interface](assets/software/deepseek-harness.png)
 
 DeepSeek Harness 是 DeepSeek 推出的本地优先、可扩展的开源 AI 编程智能体与 Agent 运行环境，目前处于开发者预览阶段。
 
@@ -130,6 +160,8 @@ DeepSeek Harness 是 DeepSeek 推出的本地优先、可扩展的开源 AI 编�
 
 ### Clash Verge Rev
 
+![Clash Verge Rev interface](assets/software/clash-verge-rev.png)
+
 Clash Verge Rev 是基于 Mihomo 内核和 Tauri 的开源跨平台代理客户端，是原 Clash Verge 的社区延续版本。
 
 - **功能：** 订阅与配置管理、系统代理、TUN 模式、节点/规则编辑、配置合并与脚本增强、WebDAV 备份同步。
@@ -139,6 +171,8 @@ Clash Verge Rev 是基于 Mihomo 内核和 Tauri 的开源跨平台代理客户�
 
 ### Neat Download Manager
 
+![Neat Download Manager interface](assets/software/neat-download-manager.png)
+
 Neat Download Manager 是面向 Windows 与 macOS 的免费下载管理器，强调轻量、多线程和浏览器接管。
 
 - **功能：** HTTP/HTTPS/FTP 下载、动态分段、暂停和断点续传、分类、限速、代理、浏览器扩展和 HLS 合并。
@@ -146,6 +180,8 @@ Neat Download Manager 是面向 Windows 与 macOS 的免费下载管理器，强
 - **官网：** [neatdownloadmanager.com](https://neatdownloadmanager.com/)
 
 ### Internet Download Manager
+
+![Internet Download Manager interface](assets/software/internet-download-manager.png)
 
 Internet Download Manager（IDM）是 Windows 上成熟的商业下载管理器，以浏览器集成和稳定的分段下载著称。
 
@@ -155,6 +191,8 @@ Internet Download Manager（IDM）是 Windows 上成熟的商业下载管理器�
 
 ### qBittorrent
 
+![qBittorrent interface](assets/software/qbittorrent.png)
+
 qBittorrent 是一款免费、开源、无广告的 BitTorrent 客户端，提供完整且跨平台的下载体验。
 
 - **功能：** Torrent 与磁力链接、DHT/PEX/LSD、RSS 自动下载、带宽计划、优先级、搜索、种子制作和 Web UI。
@@ -163,6 +201,8 @@ qBittorrent 是一款免费、开源、无广告的 BitTorrent 客户端，提�
 - **GitHub：** [qbittorrent/qBittorrent](https://github.com/qbittorrent/qBittorrent)
 
 ### SakuraFrp 启动器
+
+![SakuraFrp 启动器 interface](assets/software/sakurafrp.png)
 
 SakuraFrp 启动器是 SakuraFrp 内网穿透服务的客户端，可将内网游戏服务、网站或远程桌面映射到公网节点。
 
@@ -175,6 +215,8 @@ SakuraFrp 启动器是 SakuraFrp 内网穿透服务的客户端，可将内网�
 
 ### foobar2000
 
+![foobar2000 interface](assets/software/foobar2000.png)
+
 foobar2000 是一款以音频播放、媒体库管理和高度可定制著称的播放器，特别适合本地音乐收藏用户。
 
 - **功能：** 主流音频格式、无缝播放、ReplayGain、标签编辑、CD 抓轨、格式转换、网络电台、DSP 和组件扩展。
@@ -182,6 +224,8 @@ foobar2000 是一款以音频播放、媒体库管理和高度可定制著称的
 - **官网：** [foobar2000.org](https://www.foobar2000.org/)
 
 ### Honeyview
+
+![Honeyview interface](assets/software/honeyview.png)
 
 Honeyview 是 Bandisoft 推出的轻量图片浏览器，擅长快速浏览普通图片、动图和压缩包内的漫画图片。
 
@@ -191,6 +235,8 @@ Honeyview 是 Bandisoft 推出的轻量图片浏览器，擅长快速浏览普�
 
 ### PotPlayer（64 位）
 
+![PotPlayer（64 位） interface](assets/software/potplayer.png)
+
 PotPlayer 是面向 Windows 的多媒体播放器，拥有广泛的格式支持和细致的播放参数设置。
 
 - **功能：** 本地/网络音视频、内置解码器、硬件加速、字幕同步、播放列表、画面与声音处理、截图/录制和 360° 视频。
@@ -198,6 +244,8 @@ PotPlayer 是面向 Windows 的多媒体播放器，拥有广泛的格式支持�
 - **官网：** [potplayer.daum.net](https://potplayer.daum.net/)
 
 ### Spotify
+
+![Spotify interface](assets/software/spotify.png)
 
 Spotify 是跨平台流媒体音频服务，提供音乐、播客和部分市场的有声书内容。
 
@@ -207,6 +255,8 @@ Spotify 是跨平台流媒体音频服务，提供音乐、播客和部分市场
 
 ### Kazumi
 
+![Kazumi interface](assets/software/kazumi.png)
+
 Kazumi 是一款基于自定义规则的开源番剧采集与在线观看应用，由用户自行导入规则连接内容来源。
 
 - **功能：** 番剧搜索与时间表、规则分享、多源播放、弹幕、追番、倍速、下载、DLNA 和 Anime4K 超分辨率。
@@ -215,6 +265,8 @@ Kazumi 是一款基于自定义规则的开源番剧采集与在线观看应用�
 - **GitHub：** [Predidit/Kazumi](https://github.com/Predidit/Kazumi)
 
 ### Lossless Scaling
+
+![Lossless Scaling interface](assets/software/lossless-scaling.png)
 
 Lossless Scaling 是通过 Steam 提供的 Windows 图像缩放与帧生成工具，可用于缺少原生升频或插帧的游戏和窗口化应用。
 

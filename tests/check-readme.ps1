@@ -59,13 +59,26 @@ foreach ($document in $documents) {
         throw "$name 缺少语言切换链接。"
     }
 
-    $links = [regex]::Matches($content, '\[[^\]]+\]\(([^)]+)\)')
+    $links = [regex]::Matches($content, '(?<!!)\[[^\]]+\]\(([^)]+)\)')
     foreach ($link in $links) {
         $target = $link.Groups[1].Value
-        if ($target -notmatch '^(https://|#|README\.md$|README\.en\.md$)') {
+        if ($target -notmatch '^(https://|#|README\.md$|README\.en\.md$|output/pdf/MON-Tool-Recommendations\.pdf$)') {
             throw "$name 中发现无效链接：$target"
         }
     }
 
-    Write-Host "$name 检查通过：$($document.Tools.Count) 个工具、$categoryCount 个分类、$($links.Count) 个有效链接。"
+    $imageCount = ([regex]::Matches($content, '(?m)^!\[[^\]]+\]\(assets/software/[^)]+\.png\)$')).Count
+    if ($imageCount -ne $document.Tools.Count) {
+        throw "$name 应包含 $($document.Tools.Count) 张软件图片，实际为 $imageCount 张。"
+    }
+
+    $imagePaths = [regex]::Matches($content, '(?m)^!\[[^\]]+\]\((assets/software/[^)]+\.png)\)$')
+    foreach ($image in $imagePaths) {
+        $absoluteImage = Join-Path (Split-Path $document.Path -Parent) $image.Groups[1].Value
+        if (-not (Test-Path -LiteralPath $absoluteImage)) {
+            throw "$name 引用的图片不存在：$($image.Groups[1].Value)"
+        }
+    }
+
+    Write-Host "$name 检查通过：$($document.Tools.Count) 个工具、$categoryCount 个分类、$imageCount 张图片、$($links.Count) 个有效链接。"
 }
