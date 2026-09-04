@@ -6,18 +6,9 @@
 
 > Images are captured from each product's official website or official GitHub page to illustrate its interface and purpose.
 
-A curated list of software I use regularly and recommend. The tools are organized into only four broad categories. Each entry includes an introduction, key features, advantages, and an official link; open-source projects also include their GitHub repository.
+A curated list of software I use regularly and recommend. Each entry includes an introduction, key features, advantages, and an official link; open-source projects also include their GitHub repository.
 
 > Download software only from official websites or project repositories. Use proxy, tunneling, download, and streaming tools in accordance with local laws, service terms, and content licenses.
-
-## Contents
-
-- [Recording, Creation, and Documents](#recording-creation-and-documents)
-- [System, Productivity, and Development](#system-productivity-and-development)
-- [Downloads and Networking](#downloads-and-networking)
-- [Media and Entertainment](#media-and-entertainment)
-
-## Recording, Creation, and Documents
 
 ### OBS Studio
 
@@ -69,8 +60,6 @@ Arctime is a cross-platform subtitle-production application for video creators, 
 - **Features:** Audio/video waveform timing, subtitle editing, AI speech recognition, automatic timing, styling, translation assistance, and rendering.
 - **Advantages:** Intuitive timeline workflow; keeps subtitle tasks in one application; friendly to Chinese-language production; supports major desktop systems.
 - **Website:** [arctime.cn](https://arctime.cn/)
-
-## System, Productivity, and Development
 
 ### Geek Uninstaller
 
@@ -156,8 +145,6 @@ DeepSeek Harness is DeepSeek's local-first, extensible, open-source coding agent
 - **Website:** [deepseek.com/harness](https://www.deepseek.com/harness/)
 - **GitHub:** [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)
 
-## Downloads and Networking
-
 ### Clash Verge Rev
 
 ![Clash Verge Rev interface](assets/software/clash-verge-rev.png)
@@ -210,8 +197,6 @@ SakuraFrp Launcher is the client for the SakuraFrp tunneling service, exposing i
 - **Advantages:** Friendly Chinese panel and documentation; works without a public IP; centralizes relay selection and tunnel management.
 - **Website:** [natfrp.com](https://www.natfrp.com/)
 - **GitHub:** [natfrp](https://github.com/natfrp) (documentation and selected platform projects; Windows 2.x source is archived and the 3.x core is no longer open source)
-
-## Media and Entertainment
 
 ### foobar2000
 

@@ -39,8 +39,8 @@ foreach ($document in $documents) {
     }
 
     $categoryCount = ([regex]::Matches($content, '(?m)^## (?!目录|关于本清单|Contents|About This List).+$')).Count
-    if ($categoryCount -ne 4) {
-        throw "$name 应包含 4 个工具分类，实际为 $categoryCount 个。"
+    if ($categoryCount -ne 0) {
+        throw "$name 不应包含工具分类，实际为 $categoryCount 个。"
     }
 
     $toolHeadingCount = ([regex]::Matches($content, '(?m)^### .+$')).Count
@@ -80,5 +80,5 @@ foreach ($document in $documents) {
         }
     }
 
-    Write-Host "$name 检查通过：$($document.Tools.Count) 个工具、$categoryCount 个分类、$imageCount 张图片、$($links.Count) 个有效链接。"
+    Write-Host "$name 检查通过：$($document.Tools.Count) 个工具、无分类、$imageCount 张图片、$($links.Count) 个有效链接。"
 }

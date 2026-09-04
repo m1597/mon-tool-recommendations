@@ -6,18 +6,9 @@
 
 > 配图截取自对应软件的官方网站或官方 GitHub 页面，仅用于展示软件界面与产品特点。
 
-这里整理了我日常使用并愿意推荐的软件工具。清单只分为四个大类，每款工具都附有介绍、主要功能、优点和官方入口；开源项目还会列出 GitHub 仓库。
+这里整理了我日常使用并愿意推荐的软件工具。每款工具都附有介绍、主要功能、优点和官方入口；开源项目还会列出 GitHub 仓库。
 
 > 请从官方网站或项目仓库下载软件。网络代理、内网穿透、下载和流媒体工具应在当地法律、服务条款与内容授权允许的范围内使用。
-
-## 目录
-
-- [录屏、创作与文档](#录屏创作与文档)
-- [系统、效率与开发](#系统效率与开发)
-- [下载与网络](#下载与网络)
-- [影音与娱乐](#影音与娱乐)
-
-## 录屏、创作与文档
 
 ### OBS Studio
 
@@ -69,8 +60,6 @@ Arctime 是面向视频创作者的跨平台字幕制作软件，重点解决听
 - **功能：** 音视频波形打轴、字幕编辑与校对、AI 语音识别、自动打轴、字幕样式设计、翻译辅助和视频压制。
 - **优点：** 时间轴操作直观；字幕制作流程集中；对中文视频工作流友好；支持 Windows、macOS 和 Linux。
 - **官网：** [arctime.cn](https://arctime.cn/)
-
-## 系统、效率与开发
 
 ### Geek Uninstaller
 
@@ -156,8 +145,6 @@ DeepSeek Harness 是 DeepSeek 推出的本地优先、可扩展的开源 AI 编�
 - **官网：** [deepseek.com/harness](https://www.deepseek.com/harness/)
 - **GitHub：** [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness)
 
-## 下载与网络
-
 ### Clash Verge Rev
 
 ![Clash Verge Rev interface](assets/software/clash-verge-rev.png)
@@ -210,8 +197,6 @@ SakuraFrp 启动器是 SakuraFrp 内网穿透服务的客户端，可将内网�
 - **优点：** 中文面板和文档友好；无需公网 IP 即可发布内网服务；节点选择和隧道管理集中。
 - **官网：** [natfrp.com](https://www.natfrp.com/)
 - **GitHub：** [natfrp](https://github.com/natfrp)（含文档和部分平台项目；Windows 2.x 启动器源码已归档，3.x 核心不再开源）
-
-## 影音与娱乐
 
 ### foobar2000
 

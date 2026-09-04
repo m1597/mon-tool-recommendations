@@ -72,16 +72,6 @@ styles.add(
 )
 styles.add(
     ParagraphStyle(
-        name="CategoryCN",
-        fontName="CN-Bold",
-        fontSize=12,
-        leading=18,
-        textColor=BLUE,
-        spaceAfter=7,
-    )
-)
-styles.add(
-    ParagraphStyle(
         name="ToolTitleCN",
         fontName="CN-Bold",
         fontSize=22,
@@ -137,17 +127,6 @@ styles.add(
 )
 styles.add(
     ParagraphStyle(
-        name="ContentsCategoryCN",
-        fontName="CN-Bold",
-        fontSize=11,
-        leading=17,
-        textColor=BLUE,
-        spaceBefore=6,
-        spaceAfter=2,
-    )
-)
-styles.add(
-    ParagraphStyle(
         name="ContentsItemCN",
         fontName="CN",
         fontSize=8.8,
@@ -159,24 +138,19 @@ styles.add(
 
 
 def parse_readme(path: Path):
-    categories = []
-    current_category = None
+    tools = []
     current_tool = None
     lines = path.read_text(encoding="utf-8").splitlines()
 
     for line in lines:
-        if line.startswith("## ") and line[3:] not in {"目录", "关于本清单"}:
-            current_category = {"name": line[3:].strip(), "tools": []}
-            categories.append(current_category)
-            current_tool = None
-        elif line.startswith("### ") and current_category is not None:
+        if line.startswith("### "):
             current_tool = {
                 "name": line[4:].strip(),
                 "description": "",
                 "fields": [],
                 "image": None,
             }
-            current_category["tools"].append(current_tool)
+            tools.append(current_tool)
         elif current_tool is not None:
             image_match = re.match(r"!\[[^\]]*\]\(([^)]+)\)", line)
             field_match = re.match(r"- \*\*([^*]+)\*\*\s*(.*)", line)
@@ -187,8 +161,7 @@ def parse_readme(path: Path):
             elif line and not line.startswith(">") and not current_tool["description"]:
                 current_tool["description"] = line.strip()
 
-    return categories
-
+    return tools
 
 def markdown_inline(text: str) -> str:
     parts = []
@@ -236,7 +209,7 @@ def first_page(canvas, doc):
 
 
 def build_pdf():
-    categories = parse_readme(README)
+    tools = parse_readme(README)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
     doc = SimpleDocTemplate(
@@ -265,7 +238,7 @@ def build_pdf():
         [
             [
                 Paragraph("<b>24</b><br/>款工具", styles["BodyCN"]),
-                Paragraph("<b>4</b><br/>个大类", styles["BodyCN"]),
+                Paragraph("<b>无分类</b><br/>顺序浏览", styles["BodyCN"]),
                 Paragraph("<b>图文</b><br/>界面展示", styles["BodyCN"]),
             ]
         ],
@@ -295,14 +268,37 @@ def build_pdf():
                 styles["CoverSubtitleCN"],
             ),
             PageBreak(),
-            Paragraph("目录", styles["ContentsTitleCN"]),
+            Paragraph("工具索引", styles["ContentsTitleCN"]),
         ]
     )
 
-    for category in categories:
-        story.append(Paragraph(category["name"], styles["ContentsCategoryCN"]))
-        names = " · ".join(tool["name"] for tool in category["tools"])
-        story.append(Paragraph(escape(names), styles["ContentsItemCN"]))
+    index_rows = []
+    midpoint = (len(tools) + 1) // 2
+    for row in range(midpoint):
+        cells = []
+        for tool_index in (row, row + midpoint):
+            if tool_index < len(tools):
+                label = f"{tool_index + 1:02d}  {tools[tool_index]['name']}"
+                cells.append(Paragraph(escape(label), styles["ContentsItemCN"]))
+            else:
+                cells.append("")
+        index_rows.append(cells)
+
+    index_table = Table(index_rows, colWidths=[8.2 * cm, 8.2 * cm])
+    index_table.setStyle(
+        TableStyle(
+            [
+                ("VALIGN", (0, 0), (-1, -1), "TOP"),
+                ("ROWBACKGROUNDS", (0, 0), (-1, -1), [colors.white, PALE]),
+                ("LEFTPADDING", (0, 0), (-1, -1), 8),
+                ("RIGHTPADDING", (0, 0), (-1, -1), 8),
+                ("TOPPADDING", (0, 0), (-1, -1), 7),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 7),
+                ("LINEBELOW", (0, 0), (-1, -1), 0.35, LINE),
+            ]
+        )
+    )
+    story.append(index_table)
 
     story.extend(
         [
@@ -314,30 +310,25 @@ def build_pdf():
         ]
     )
 
-    for category in categories:
-        for index, tool in enumerate(category["tools"]):
-            story.append(PageBreak())
-            story.append(Paragraph(escape(category["name"]), styles["CategoryCN"]))
-            story.append(Paragraph(escape(tool["name"]), styles["ToolTitleCN"]))
+    for tool in tools:
+        story.append(PageBreak())
+        story.append(Paragraph(escape(tool["name"]), styles["ToolTitleCN"]))
 
-            image_path = ROOT / tool["image"] if tool["image"] else None
-            if image_path and image_path.exists():
-                story.append(fit_image(image_path))
-                story.append(
-                    Paragraph(
-                        "图片来源：对应软件官方网站或官方 GitHub 页面",
-                        styles["CaptionCN"],
-                    )
+        image_path = ROOT / tool["image"] if tool["image"] else None
+        if image_path and image_path.exists():
+            story.append(fit_image(image_path))
+            story.append(
+                Paragraph(
+                    "图片来源：对应软件官方网站或官方 GitHub 页面",
+                    styles["CaptionCN"],
                 )
+            )
 
-            story.append(Paragraph(markdown_inline(tool["description"]), styles["BodyCN"]))
+        story.append(Paragraph(markdown_inline(tool["description"]), styles["BodyCN"]))
 
-            for label, value in tool["fields"]:
-                text = f"<b>{escape(label)}</b> {markdown_inline(value)}"
-                story.append(Paragraph("• " + text, styles["BulletCN"]))
-
-            if index == len(category["tools"]) - 1:
-                story.append(Spacer(1, 0.3 * cm))
+        for label, value in tool["fields"]:
+            field_text = f"<b>{escape(label)}</b> {markdown_inline(value)}"
+            story.append(Paragraph("• " + field_text, styles["BulletCN"]))
 
     doc.build(story, onFirstPage=first_page, onLaterPages=page_chrome)
     print(OUTPUT)

@@ -31,6 +31,15 @@ with pdfplumber.open(pdf_path) as pdf:
     if any(not text for text in texts):
         raise SystemExit("PDF 中存在空白页。")
     combined = "\n".join(texts)
+    if "工具索引" not in texts[1] or "无分类" not in texts[0]:
+        raise SystemExit("PDF 未显示无分类封面或工具索引。")
+    forbidden_categories = [
+        "录屏、创作与文档", "系统、效率与开发",
+        "下载与网络", "影音与娱乐",
+    ]
+    found_categories = [name for name in forbidden_categories if name in combined]
+    if found_categories:
+        raise SystemExit("PDF 仍包含分类：" + ", ".join(found_categories))
     missing = [name for name in expected_tools if name not in combined]
     if missing:
         raise SystemExit("PDF 缺少工具：" + ", ".join(missing))
